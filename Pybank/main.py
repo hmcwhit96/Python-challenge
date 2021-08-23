@@ -3,13 +3,13 @@
 import os
 import csv
 import math
-import numpy as np
+#import numpy as np
 import itertools as it
 #import operator as op
 
 
 
-pybank_csv = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Resources\\budget_data.csv"
+pybank_csv = r"C:\Users\hmwhi\OneDrive\Documents\GitHub\Python-challenge\Pybank\Resources\budget_data.csv"
 
 
 #clean_csv = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Analysis\\clean_csv.csv"
@@ -33,7 +33,7 @@ no_of_months = len(date)
 
 #Clean the CSV file
 cleaned_csv = zip(date,profit_loss)
-output_file = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Analysis\\clean_csv.csv"
+output_file = "C:\\Users\\hmwhi\\OneDrive\\Documents\\GitHub\\python-challenge\\Pybank\\Analysis\\clean_csv.csv"
 with open(output_file, 'w',newline='') as datafile:
    
     writer = csv.writer(datafile)
@@ -106,7 +106,7 @@ line5 = (f"Average Change: ${avg_change}")
 line6 = (f"Greatest Increase in Profits: {max_}")
 line7 = (f"Greatest Decrease in Profits: {min_}")
 
-financial_analysis = open(r"C:\Users\hmwhi\OneDrive\Desktop\Bootcamp Files\Homework Files\python-challenge\Pybank\Analysis\financial_analysis.txt","w")
+financial_analysis = open(r"C:\Users\hmwhi\OneDrive\Documents\GitHub\python-challenge\Pybank\Analysis\financial_analysis.txt","w")
 financial_analysis.write(("%s \n %s \n %s \n %s \n %s \n %s \n %s \n" % (line1,line2,line3,line4,line5,line6,line7)))
 
 finalaysis = [line1,line2,line3,line4,line5,line6,line7]
