@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # import os
 # import csv
 
@@ -57,4 +58,65 @@
 # # Extract first row to avoid appending to net_change_list
 # # then do a for loop:
 # #   Track the total
+=======
+# import os
+# import csv
+
+
+# pybank_csv = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Resources\\budget_data.csv"
+# #pybank_analysis = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Analysis"
+
+
+# # def financial_analysis(financial_data):    
+# month = []
+# profit_loss = []
+
+
+
+# with open(pybank_csv,newline='',encoding='utf-8') as csvfile:
+    
+#     csvreader = csv.reader(csvfile,delimiter=',')
+
+#     for row in csvreader:
+#         month.append(row[0])
+#         profit_loss.append(row[1])
+        
+
+# cleaned_csv = zip(month,profit_loss)
+# output_file = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Analysis\\clean_csv.csv"
+# with open(output_file, 'w',newline='') as datafile:
+#     writer = csv.writer(datafile)
+#     writer.writerows(cleaned_csv)
+
+# #clean_csv = "C:\\Users\\hmwhi\\OneDrive\\Desktop\\Bootcamp Files\\Homework Files\\python-challenge\\Pybank\\Analysis\\clean_csv.csv"
+# # if this ^ stayed true, it would have to be read again in order to get values
+
+# cleaned_csv
+
+# #month_count = sum(1 for row in clean_csv)
+# #print(month_count)
+
+# #print(len(clean_csv))
+# #date_format = datetime.strptime(month,'%m%y')
+# #print(date_format)
+
+
+# # with open(pybank_csv)as f:
+# #     row_count = (sum(1 for line in f)-1)
+
+# # print(row_count)
+
+# # Read the csv and convert it into a list of dictionaries
+# # Read the header row
+# # with open(clean_csv, mode='r')as infile:
+# #     reader = csv.reader(infile)
+# #     with open(clean_csv,mode='w')as outfile:
+# #         writer = csv.writer(outfile)
+# #         mydict = {rows[0]:rows[1] for rows in reader}
+
+# # print(mydict)
+# # Extract first row to avoid appending to net_change_list
+# # then do a for loop:
+# #   Track the total
+>>>>>>> 6c95cd80d1805e886a28dbb5d90cb4d98f2ad72a
 # #   Track the net change
